@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/be93d0f458.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+       
+ 
+
+        font-family:'Poppins' ;
+        height: 650px;
+       background-color: red; /* For browsers that do not support gradients */
+        background-image: repeating-conic-gradient(#7149C6 0deg 10deg, #FC2947 10deg 20deg, #FE6244 20deg 30deg);
+       display: flex;justify-content: center;
+       align-content: center;
+       flex-wrap: wrap;
+    }
+   .card{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 10px;
+        width: 350px;
+        height: max-content;
+       border-radius: 59px;
+        /* From https://css.glass */
+        background: rgba(240, 239, 239, 0.41);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(240, 239, 239, 0.54);
+    }
+    .card_in{
+        
+        width: 340px;
+        height: max-content;
+         border-radius: 59px;
+    }
+    .photo img{
+          display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+        object-position: center;
+        
+        
+
+    }
+
+    .photo{
+        overflow: hidden;
+
+         display: inline-block;
+    padding: 10px;
+    background: linear-gradient(150deg, #FE6244, #FC2947, #7149C6);
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite;
+             
+    }
+    @keyframes animated-gradient {
+    25% {
+        background-position: left bottom;
+    }
+
+    50% {
+        background-position: right bottom;
+    }
+
+    75% {
+        background-position: right top;
+    }
+
+    100% {
+        background-position: left top;
+    }
+}
+    .name{
+       
+        color: #7149C6;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+    }
+    .social_media{
+        text-align: center;
+    }
+    .social_media i{
+        color: #FC2947;
+        font-size: 30px;
+        margin: 10px;
+        position: relative;
+    
+        
+    }
+    .social_media i:hover{
+        color: #7149C6;
+    }
+    .post{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        
+        flex-wrap: wrap;
+        align-content: center;
+        
+        
+       
+    }
+    .post div{
+        margin: 5px;
+        color: #7149C6;
+        text-align:center ;
+    }
+    .bx{
+        width: max-content;
+        width: 80px;
+    
+    }
+    .border{
+        
+        background-color: #FFDEB9;
+        width: 1px;
+        height: 50px;
+    }
+    .bx_button{
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+    }
+    .button{
+        background-color: #FE6244;
+        color: #122f57;
+        padding: 5px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .button:hover{
+        background-color: #fe63449a;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        
+        <div class="card">
+            <div class="card_in">
+                <div class="box">
+                    <div class="photo">
+                        <img src="images/muhamad fadli.jpg" alt="">
+                    </div>
+            
+                </div>
+                <div>
+                    <p class="name">Muh. Fadli</p>
+                </div>
+                <div class="social_media">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+            
+                </div>
+                <div class="bx_button">
+                    <div class="button">
+                        About Me
+                    </div>
+            
+                </div>
+                <div class="post">
+                    <div class="bx">
+                        <div>Post</div>
+                        <div>4</div>
+                    </div>
+                    <div class="border"></div>
+                    <div class="bx">
+                        <div>Followers</div>
+                        <div>746</div>
+                    </div>
+                    <div class="border"></div>
+                    <div class="bx">
+                        <div>Following</div>
+                        <div>666</div>
+                    </div>
+            
+                </div>
+            
+            
+            
+            
+            
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
